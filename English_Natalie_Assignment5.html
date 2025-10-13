@@ -1,0 +1,841 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+    
+    
+
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Collecting numpy==1.26.4 (from -r requirements.txt (line 1))
+  Downloading numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">18.3/18.3 MB</span> <span class="ansi-red-fg">33.2 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>00:0100:01
+Collecting gymnasium (from -r requirements.txt (line 2))
+  Downloading gymnasium-1.2.1-py3-none-any.whl (951 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">951.1/951.1 kB</span> <span class="ansi-red-fg">12.9 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>00:01
+Collecting tensorflow==2.19.0 (from -r requirements.txt (line 3))
+  Downloading tensorflow-2.19.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (644.9 MB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">644.9/644.9 MB</span> <span class="ansi-red-fg">1.6 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>00:0100:01
+Collecting absl-py&gt;=1.0.0 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading absl_py-2.3.1-py3-none-any.whl (135 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">135.8/135.8 kB</span> <span class="ansi-red-fg">2.3 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>00:01
+Collecting astunparse&gt;=1.6.0 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Collecting flatbuffers&gt;=24.3.25 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading flatbuffers-25.9.23-py2.py3-none-any.whl (30 kB)
+Collecting gast!=0.5.0,!=0.5.1,!=0.5.2,&gt;=0.2.1 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading gast-0.6.0-py3-none-any.whl (21 kB)
+Collecting google-pasta&gt;=0.1.1 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">57.5/57.5 kB</span> <span class="ansi-red-fg">748.0 kB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>a <span class="ansi-cyan-fg">0:00:01</span>
+Collecting libclang&gt;=13.0.0 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl (24.5 MB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">24.5/24.5 MB</span> <span class="ansi-red-fg">27.2 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>00:0100:01
+Collecting opt-einsum&gt;=2.3.2 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">71.9/71.9 kB</span> <span class="ansi-red-fg">968.9 kB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>00:01
+Requirement already satisfied: packaging in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3)) (23.0)
+Collecting protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,&lt;6.0.0dev,&gt;=3.20.3 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading protobuf-5.29.5-cp38-abi3-manylinux2014_x86_64.whl (319 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">319.9/319.9 kB</span> <span class="ansi-red-fg">5.1 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>00:01
+Requirement already satisfied: requests&lt;3,&gt;=2.21.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3)) (2.30.0)
+Requirement already satisfied: setuptools in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3)) (65.5.0)
+Requirement already satisfied: six&gt;=1.12.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3)) (1.16.0)
+Collecting termcolor&gt;=1.1.0 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading termcolor-3.1.0-py3-none-any.whl (7.7 kB)
+Requirement already satisfied: typing-extensions&gt;=3.6.6 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3)) (4.5.0)
+Collecting wrapt&gt;=1.11.0 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (82 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">82.4/82.4 kB</span> <span class="ansi-red-fg">1.1 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>:00:01
+Collecting grpcio&lt;2.0,&gt;=1.24.3 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading grpcio-1.75.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (6.5 MB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">6.5/6.5 MB</span> <span class="ansi-red-fg">29.3 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>00:0100:01
+Collecting tensorboard~=2.19.0 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading tensorboard-2.19.0-py3-none-any.whl (5.5 MB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">5.5/5.5 MB</span> <span class="ansi-red-fg">34.1 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>:00:0100:01
+Collecting keras&gt;=3.5.0 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading keras-3.11.3-py3-none-any.whl (1.4 MB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">1.4/1.4 MB</span> <span class="ansi-red-fg">14.0 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>:00:01
+Collecting h5py&gt;=3.11.0 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading h5py-3.14.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.5 MB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">4.5/4.5 MB</span> <span class="ansi-red-fg">20.8 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>00:0100:01
+Collecting ml-dtypes&lt;1.0.0,&gt;=0.5.1 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading ml_dtypes-0.5.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (4.9 MB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">4.9/4.9 MB</span> <span class="ansi-red-fg">28.1 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>00:0100:01
+Collecting tensorflow-io-gcs-filesystem&gt;=0.23.1 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading tensorflow_io_gcs_filesystem-0.37.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.1 MB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">5.1/5.1 MB</span> <span class="ansi-red-fg">23.1 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>00:0100:01
+Collecting cloudpickle&gt;=1.2.0 (from gymnasium-&gt;-r requirements.txt (line 2))
+  Downloading cloudpickle-3.1.1-py3-none-any.whl (20 kB)
+Collecting farama-notifications&gt;=0.0.1 (from gymnasium-&gt;-r requirements.txt (line 2))
+  Downloading Farama_Notifications-0.0.4-py3-none-any.whl (2.5 kB)
+Collecting wheel&lt;1.0,&gt;=0.23.0 (from astunparse&gt;=1.6.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
+Collecting typing-extensions&gt;=3.6.6 (from tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">44.6/44.6 kB</span> <span class="ansi-red-fg">942.7 kB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>a <span class="ansi-cyan-fg">0:00:01</span>
+Collecting rich (from keras&gt;=3.5.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading rich-14.1.0-py3-none-any.whl (243 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">243.4/243.4 kB</span> <span class="ansi-red-fg">5.9 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>a <span class="ansi-cyan-fg">0:00:01</span>
+Collecting namex (from keras&gt;=3.5.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading namex-0.1.0-py3-none-any.whl (5.9 kB)
+Collecting optree (from keras&gt;=3.5.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading optree-0.17.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (402 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">402.0/402.0 kB</span> <span class="ansi-red-fg">8.3 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>00:01
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from requests&lt;3,&gt;=2.21.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3)) (2.1.1)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from requests&lt;3,&gt;=2.21.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3)) (3.4)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from requests&lt;3,&gt;=2.21.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3)) (2.0.2)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from requests&lt;3,&gt;=2.21.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3)) (2023.5.7)
+Collecting markdown&gt;=2.6.8 (from tensorboard~=2.19.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading markdown-3.9-py3-none-any.whl (107 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">107.4/107.4 kB</span> <span class="ansi-red-fg">2.7 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>a <span class="ansi-cyan-fg">0:00:01</span>
+Collecting tensorboard-data-server&lt;0.8.0,&gt;=0.7.0 (from tensorboard~=2.19.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl (6.6 MB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">6.6/6.6 MB</span> <span class="ansi-red-fg">35.0 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>:00:010:01
+Requirement already satisfied: werkzeug&gt;=1.0.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from tensorboard~=2.19.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3)) (2.0.0)
+Collecting markdown-it-py&gt;=2.2.0 (from rich-&gt;keras&gt;=3.5.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">87.3/87.3 kB</span> <span class="ansi-red-fg">2.0 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>ta <span class="ansi-cyan-fg">0:00:01</span>
+Requirement already satisfied: pygments&lt;3.0.0,&gt;=2.13.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from rich-&gt;keras&gt;=3.5.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3)) (2.15.1)
+Collecting mdurl~=0.1 (from markdown-it-py&gt;=2.2.0-&gt;rich-&gt;keras&gt;=3.5.0-&gt;tensorflow==2.19.0-&gt;-r requirements.txt (line 3))
+  Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: namex, libclang, flatbuffers, farama-notifications, wrapt, wheel, typing-extensions, termcolor, tensorflow-io-gcs-filesystem, tensorboard-data-server, protobuf, opt-einsum, numpy, mdurl, markdown, google-pasta, gast, cloudpickle, absl-py, optree, ml-dtypes, markdown-it-py, h5py, gymnasium, grpcio, astunparse, tensorboard, rich, keras, tensorflow
+  Attempting uninstall: typing-extensions
+    Found existing installation: typing_extensions 4.5.0
+    Uninstalling typing_extensions-4.5.0:
+      Successfully uninstalled typing_extensions-4.5.0
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.24.2
+    Uninstalling numpy-1.24.2:
+      Successfully uninstalled numpy-1.24.2
+Successfully installed absl-py-2.3.1 astunparse-1.6.3 cloudpickle-3.1.1 farama-notifications-0.0.4 flatbuffers-25.9.23 gast-0.6.0 google-pasta-0.2.0 grpcio-1.75.1 gymnasium-1.2.1 h5py-3.14.0 keras-3.11.3 libclang-18.1.1 markdown-3.9 markdown-it-py-4.0.0 mdurl-0.1.2 ml-dtypes-0.5.3 namex-0.1.0 numpy-1.26.4 opt-einsum-3.4.0 optree-0.17.0 protobuf-5.29.5 rich-14.1.0 tensorboard-2.19.0 tensorboard-data-server-0.7.2 tensorflow-2.19.0 tensorflow-io-gcs-filesystem-0.37.1 termcolor-3.1.0 typing-extensions-4.15.0 wheel-0.45.1 wrapt-1.17.3
+
+<span class="ansi-bold">[</span><span class="ansi-blue-fg">notice</span><span class="ansi-bold">]</span> A new release of pip is available: <span class="ansi-red-fg">23.1.2</span> -&gt; <span class="ansi-green-fg">25.2</span>
+<span class="ansi-bold">[</span><span class="ansi-blue-fg">notice</span><span class="ansi-bold">]</span> To update, run: <span class="ansi-green-fg">pip install --upgrade pip</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># If the assignment takes too long, you may want to download the code and run it locally to take advantage of your GPU. </span>
+<span class="c1"># Package Imports</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="kn">import</span> <span class="nn">gymnasium</span> <span class="k">as</span> <span class="nn">gym</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1"># Environment setup and Variables</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s2">&quot;CartPole-v1&quot;</span><span class="p">,</span> <span class="n">render_mode</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Failed to initialize environment! Make sure that gymnasium was installed correctly!&#39;</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">state_shape</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">observation_space</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">action_size</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">action_space</span><span class="o">.</span><span class="n">n</span>
+
+<span class="c1"># Hyperparameters</span>
+<span class="n">GAMMA</span> <span class="o">=</span> <span class="mf">0.99</span>
+<span class="n">EXPLORATION_MAX</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">EXPLORATION_MIN</span> <span class="o">=</span> <span class="mf">0.01</span>
+<span class="n">EXPLORATION_DECAY</span> <span class="o">=</span> <span class="mf">0.990</span>
+<span class="n">LEARNING_RATE</span> <span class="o">=</span> <span class="mf">0.001</span>
+<span class="n">BATCH_SIZE</span> <span class="o">=</span> <span class="mi">64</span>
+<span class="n">TRAIN_START</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">MEMORY_SIZE</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="n">EPISODES</span> <span class="o">=</span> <span class="mi">300</span>
+
+<span class="c1"># Counters during training</span>
+<span class="n">train_freq</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">step_count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">target_update_freq</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="c1"># If an error occurs below, it is because the environment is looking for a GPU.</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>2025-09-30 13:08:11.012795: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-09-30 13:08:11.043514: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-30 13:08:11.142418: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-30 13:08:11.164220: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1759237691.242619     219 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1759237691.252904     219 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1759237691.289610     219 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1759237691.289641     219 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1759237691.289645     219 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1759237691.289648     219 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-09-30 13:08:11.298699: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">memory</span> <span class="o">=</span> <span class="n">deque</span><span class="p">(</span><span class="n">maxlen</span><span class="o">=</span><span class="n">MEMORY_SIZE</span><span class="p">)</span>
+
+<span class="c1"># DQN Builder</span>
+<span class="k">def</span> <span class="nf">build_dqn_model</span><span class="p">():</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">Sequential</span><span class="p">([</span>
+            <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">state_shape</span><span class="p">,)),</span>
+            <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+            <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+            <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="n">action_size</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
+        <span class="p">])</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="n">LEARNING_RATE</span><span class="p">),</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;mse&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">model</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Error occurred while building the DQN model!&#39;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calling the build_dqn_model method</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">build_dqn_model</span><span class="p">()</span>
+<span class="n">target_model</span> <span class="o">=</span> <span class="n">build_dqn_model</span><span class="p">()</span>
+<span class="n">target_model</span><span class="o">.</span><span class="n">set_weights</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">get_weights</span><span class="p">())</span>
+
+<span class="c1"># If an error displays, it is simply trying to connect to the GPU</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>E0000 00:00:1759237699.075102     219 cuda_executor.cc:1228] INTERNAL: CUDA Runtime error: Failed call to cudaGetRuntimeVersion: Error loading CUDA libraries. GPU will not be used.: Error loading CUDA libraries. GPU will not be used.
+W0000 00:00:1759237699.079977     219 gpu_device.cc:2341] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Random Action selection for exploration</span>
+<span class="k">def</span> <span class="nf">get_action</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">EXPLORATION_MAX</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="n">EXPLORATION_MAX</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="n">action_size</span><span class="p">)</span>
+        <span class="n">q_values</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">state</span><span class="p">]),</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#Remove verbose=0 to see every prediction display</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">q_values</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error during get_action method!&quot;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Experience Replay</span>
+<span class="k">def</span> <span class="nf">experience_replay</span><span class="p">():</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">memory</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">TRAIN_START</span><span class="p">:</span>
+        <span class="k">return</span>
+
+    <span class="n">batch</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">memory</span><span class="p">,</span> <span class="n">BATCH_SIZE</span><span class="p">)</span>
+    <span class="n">states</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">BATCH_SIZE</span><span class="p">,</span> <span class="n">state_shape</span><span class="p">))</span>
+    <span class="n">next_states</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">BATCH_SIZE</span><span class="p">,</span> <span class="n">state_shape</span><span class="p">))</span>
+    <span class="n">actions</span><span class="p">,</span> <span class="n">rewards</span><span class="p">,</span> <span class="n">completions</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">state_next</span><span class="p">,</span> <span class="n">terminal</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">batch</span><span class="p">):</span>
+            <span class="n">states</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">state</span>
+            <span class="n">next_states</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">state_next</span>
+            <span class="n">actions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+            <span class="n">rewards</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
+            <span class="n">completions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">terminal</span><span class="p">)</span>
+
+        <span class="n">target_q</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">states</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#Remove verbose=0 to see every prediction display</span>
+        <span class="n">next_q</span> <span class="o">=</span> <span class="n">target_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">next_states</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#Remove verbose=0 to see every prediction display</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">BATCH_SIZE</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">completions</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                <span class="n">target_q</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">actions</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">rewards</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">target_q</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">actions</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">rewards</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">GAMMA</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">next_q</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+        <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">states</span><span class="p">,</span> <span class="n">target_q</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">BATCH_SIZE</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error during replay&quot;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># A list to keep track of all of the episodes</span>
+<span class="n">episode_rewards</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Main loop</span>
+<span class="c1"># Will iterate through based on the number of EPISODES originally listed up top</span>
+<span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">EPISODES</span><span class="p">):</span>
+    <span class="n">state</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+    <span class="n">done</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">total_reward</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">done</span><span class="p">:</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">EXPLORATION_MAX</span><span class="p">)</span>
+        <span class="n">next_state</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">terminated</span><span class="p">,</span> <span class="n">truncated</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        <span class="n">done</span> <span class="o">=</span> <span class="n">terminated</span> <span class="ow">or</span> <span class="n">truncated</span>
+        
+        <span class="n">reward</span> <span class="o">=</span> <span class="n">reward</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">done</span> <span class="k">else</span> <span class="o">-</span><span class="mi">10</span>
+
+        <span class="n">memory</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">next_state</span><span class="p">,</span> <span class="n">done</span><span class="p">))</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="n">next_state</span>
+        <span class="n">total_reward</span> <span class="o">+=</span> <span class="n">reward</span>
+        
+        <span class="n">step_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">step_count</span> <span class="o">%</span> <span class="n">train_freq</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">experience_replay</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">EXPLORATION_MAX</span> <span class="o">&gt;</span> <span class="n">EXPLORATION_MIN</span><span class="p">:</span>
+        <span class="n">EXPLORATION_MAX</span> <span class="o">*=</span> <span class="n">EXPLORATION_DECAY</span>
+        <span class="n">EXPLORATION_MAX</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">EXPLORATION_MIN</span><span class="p">,</span> <span class="n">EXPLORATION_MAX</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">e</span> <span class="o">%</span> <span class="n">target_update_freq</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">target_model</span><span class="o">.</span><span class="n">set_weights</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">get_weights</span><span class="p">())</span>
+
+    <span class="n">episode_rewards</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">total_reward</span><span class="p">)</span>
+    <span class="c1"># This will display the average reward of every 10 episodes occurring.</span>
+    <span class="c1"># Comment this section and add the below print method if you want to display every episode</span>
+    <span class="k">if</span> <span class="n">e</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">avg_reward</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">episode_rewards</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Episode </span><span class="si">{</span><span class="n">e</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: Average Reward = </span><span class="si">{</span><span class="n">avg_reward</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, Exploration = </span><span class="si">{</span><span class="n">EXPLORATION_MAX</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># Logic to complete execution if average is greater than 195</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">episode_rewards</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="n">avg_last_hun</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">episode_rewards</span><span class="p">[</span><span class="o">-</span><span class="mi">100</span><span class="p">:])</span>
+        <span class="k">if</span> <span class="n">avg_last_hun</span> <span class="o">&gt;=</span> <span class="mi">195</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Solved at episode </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">: Average reward over last 100: </span><span class="si">{</span><span class="n">avg_last_hun</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">break</span>
+        
+    <span class="c1"># Comment this in if you want to see every iteration of the training occurring     </span>
+    <span class="c1"># print(f&quot;Episode {e+1}: Total Reward = {total_reward}, Exploration = {EXPLORATION_MAX:.3f}&quot;)</span>
+
+<span class="c1"># Saving model as needed    </span>
+<span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;Cartpole_model.h5&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Training complete! Model saved as Cartpole_model&quot;</span><span class="p">)</span>
+
+<span class="c1"># Note, if an error displays, it is attempting to connect to the GPU.</span>
+<span class="c1"># It will not connect and run on CPU. </span>
+<span class="c1"># Code will take some time to run, which is commonplace for real life models.</span>
+<span class="c1"># Make sure your computer does not go to sleep, and take a well-deserved break!</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Episode 1: Average Reward = 2.00, Exploration = 0.990
+Episode 11: Average Reward = 7.50, Exploration = 0.895
+Episode 21: Average Reward = 14.70, Exploration = 0.810
+Episode 31: Average Reward = 18.90, Exploration = 0.732
+Episode 41: Average Reward = 22.50, Exploration = 0.662
+Episode 51: Average Reward = 22.40, Exploration = 0.599
+Episode 61: Average Reward = 29.60, Exploration = 0.542
+Episode 71: Average Reward = 30.20, Exploration = 0.490
+Episode 81: Average Reward = 70.30, Exploration = 0.443
+Episode 91: Average Reward = 130.40, Exploration = 0.401
+Episode 101: Average Reward = 166.70, Exploration = 0.362
+Episode 111: Average Reward = 246.20, Exploration = 0.328
+Episode 121: Average Reward = 202.90, Exploration = 0.296
+Episode 131: Average Reward = 234.60, Exploration = 0.268
+Episode 141: Average Reward = 144.50, Exploration = 0.242
+Episode 151: Average Reward = 217.30, Exploration = 0.219
+Episode 161: Average Reward = 298.10, Exploration = 0.198
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save(&#39;my_model.keras&#39;)` or `keras.saving.save_model(model, &#39;my_model.keras&#39;)`. 
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Solved at episode 168: Average reward over last 100: 195.54
+Training complete! Model saved as Cartpole_model
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Modified Cartpole Program: slightly increased values of:</span>
+<span class="c1"># GAMMA, EXPLORATION_MAX, EXPLORATION_MIN, EXPLORATION_DECAY, and LEARNING_RATE</span>
+
+<span class="c1"># Package Imports</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="kn">import</span> <span class="nn">gymnasium</span> <span class="k">as</span> <span class="nn">gym</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1"># Environment setup and Variables</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s2">&quot;CartPole-v1&quot;</span><span class="p">,</span> <span class="n">render_mode</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Failed to initialize environment! Make sure that gymnasium was installed correctly!&#39;</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">state_shape</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">observation_space</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">action_size</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">action_space</span><span class="o">.</span><span class="n">n</span>
+
+<span class="c1"># Hyperparameters</span>
+<span class="n">GAMMA</span> <span class="o">=</span> <span class="mf">1.0</span>        <span class="c1"># was 0.99</span>
+<span class="n">EXPLORATION_MAX</span> <span class="o">=</span> <span class="mf">1.1</span>  <span class="c1"># was 1.0</span>
+<span class="n">EXPLORATION_MIN</span> <span class="o">=</span> <span class="mf">0.02</span> <span class="c1"># was 0.01</span>
+<span class="n">EXPLORATION_DECAY</span> <span class="o">=</span> <span class="mf">0.100</span>   <span class="c1"># was 0.990</span>
+<span class="n">LEARNING_RATE</span> <span class="o">=</span> <span class="mf">0.002</span>   <span class="c1"># was 0.001</span>
+<span class="n">BATCH_SIZE</span> <span class="o">=</span> <span class="mi">64</span>
+<span class="n">TRAIN_START</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">MEMORY_SIZE</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="n">EPISODES</span> <span class="o">=</span> <span class="mi">300</span>
+
+<span class="c1"># Counters during training</span>
+<span class="n">train_freq</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">step_count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">target_update_freq</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="c1"># If an error occurs below, it is because the environment is looking for a GPU.</span>
+
+<span class="n">memory</span> <span class="o">=</span> <span class="n">deque</span><span class="p">(</span><span class="n">maxlen</span><span class="o">=</span><span class="n">MEMORY_SIZE</span><span class="p">)</span>
+
+<span class="c1"># DQN Builder</span>
+<span class="k">def</span> <span class="nf">build_dqn_model</span><span class="p">():</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">Sequential</span><span class="p">([</span>
+            <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">state_shape</span><span class="p">,)),</span>
+            <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+            <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+            <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="n">action_size</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
+        <span class="p">])</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="n">LEARNING_RATE</span><span class="p">),</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;mse&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">model</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Error occurred while building the DQN model!&#39;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        
+<span class="c1"># Calling the build_dqn_model method</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">build_dqn_model</span><span class="p">()</span>
+<span class="n">target_model</span> <span class="o">=</span> <span class="n">build_dqn_model</span><span class="p">()</span>
+<span class="n">target_model</span><span class="o">.</span><span class="n">set_weights</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">get_weights</span><span class="p">())</span>
+
+<span class="c1"># If an error displays, it is simply trying to connect to the GPU</span>
+
+<span class="c1"># Random Action selection for exploration</span>
+<span class="k">def</span> <span class="nf">get_action</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">EXPLORATION_MAX</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="n">EXPLORATION_MAX</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="n">action_size</span><span class="p">)</span>
+        <span class="n">q_values</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">state</span><span class="p">]),</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#Remove verbose=0 to see every prediction display</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">q_values</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error during get_action method!&quot;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+            
+<span class="c1"># Experience Replay</span>
+<span class="k">def</span> <span class="nf">experience_replay</span><span class="p">():</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">memory</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">TRAIN_START</span><span class="p">:</span>
+        <span class="k">return</span>
+
+    <span class="n">batch</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">memory</span><span class="p">,</span> <span class="n">BATCH_SIZE</span><span class="p">)</span>
+    <span class="n">states</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">BATCH_SIZE</span><span class="p">,</span> <span class="n">state_shape</span><span class="p">))</span>
+    <span class="n">next_states</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">BATCH_SIZE</span><span class="p">,</span> <span class="n">state_shape</span><span class="p">))</span>
+    <span class="n">actions</span><span class="p">,</span> <span class="n">rewards</span><span class="p">,</span> <span class="n">completions</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">state_next</span><span class="p">,</span> <span class="n">terminal</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">batch</span><span class="p">):</span>
+            <span class="n">states</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">state</span>
+            <span class="n">next_states</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">state_next</span>
+            <span class="n">actions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+            <span class="n">rewards</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
+            <span class="n">completions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">terminal</span><span class="p">)</span>
+
+        <span class="n">target_q</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">states</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#Remove verbose=0 to see every prediction display</span>
+        <span class="n">next_q</span> <span class="o">=</span> <span class="n">target_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">next_states</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#Remove verbose=0 to see every prediction display</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">BATCH_SIZE</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">completions</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                <span class="n">target_q</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">actions</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">rewards</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">target_q</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">actions</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">rewards</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">GAMMA</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">next_q</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+        <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">states</span><span class="p">,</span> <span class="n">target_q</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">BATCH_SIZE</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error during replay&quot;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        
+<span class="c1"># A list to keep track of all of the episodes</span>
+<span class="n">episode_rewards</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Main loop</span>
+<span class="c1"># Will iterate through based on the number of EPISODES originally listed up top</span>
+<span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">EPISODES</span><span class="p">):</span>
+    <span class="n">state</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+    <span class="n">done</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">total_reward</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">done</span><span class="p">:</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">EXPLORATION_MAX</span><span class="p">)</span>
+        <span class="n">next_state</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">terminated</span><span class="p">,</span> <span class="n">truncated</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        <span class="n">done</span> <span class="o">=</span> <span class="n">terminated</span> <span class="ow">or</span> <span class="n">truncated</span>
+        
+        <span class="n">reward</span> <span class="o">=</span> <span class="n">reward</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">done</span> <span class="k">else</span> <span class="o">-</span><span class="mi">10</span>
+
+        <span class="n">memory</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">next_state</span><span class="p">,</span> <span class="n">done</span><span class="p">))</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="n">next_state</span>
+        <span class="n">total_reward</span> <span class="o">+=</span> <span class="n">reward</span>
+        
+        <span class="n">step_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">step_count</span> <span class="o">%</span> <span class="n">train_freq</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">experience_replay</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">EXPLORATION_MAX</span> <span class="o">&gt;</span> <span class="n">EXPLORATION_MIN</span><span class="p">:</span>
+        <span class="n">EXPLORATION_MAX</span> <span class="o">*=</span> <span class="n">EXPLORATION_DECAY</span>
+        <span class="n">EXPLORATION_MAX</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">EXPLORATION_MIN</span><span class="p">,</span> <span class="n">EXPLORATION_MAX</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">e</span> <span class="o">%</span> <span class="n">target_update_freq</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">target_model</span><span class="o">.</span><span class="n">set_weights</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">get_weights</span><span class="p">())</span>
+
+    <span class="n">episode_rewards</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">total_reward</span><span class="p">)</span>
+    <span class="c1"># This will display the average reward of every 10 episodes occurring.</span>
+    <span class="c1"># Comment this section and add the below print method if you want to display every episode</span>
+    <span class="k">if</span> <span class="n">e</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">avg_reward</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">episode_rewards</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Episode </span><span class="si">{</span><span class="n">e</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: Average Reward = </span><span class="si">{</span><span class="n">avg_reward</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, Exploration = </span><span class="si">{</span><span class="n">EXPLORATION_MAX</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># Logic to complete execution if average is greater than 195</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">episode_rewards</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="n">avg_last_hun</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">episode_rewards</span><span class="p">[</span><span class="o">-</span><span class="mi">100</span><span class="p">:])</span>
+        <span class="k">if</span> <span class="n">avg_last_hun</span> <span class="o">&gt;=</span> <span class="mi">195</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Solved at episode </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">: Average reward over last 100: </span><span class="si">{</span><span class="n">avg_last_hun</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">break</span>
+        
+    <span class="c1"># Comment this in if you want to see every iteration of the training occurring     </span>
+    <span class="c1"># print(f&quot;Episode {e+1}: Total Reward = {total_reward}, Exploration = {EXPLORATION_MAX:.3f}&quot;)</span>
+
+<span class="c1"># Saving model as needed    </span>
+<span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;Cartpole_model.h5&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Training complete! Model saved as Cartpole_model&quot;</span><span class="p">)</span>
+
+<span class="c1"># Note, if an error displays, it is attempting to connect to the GPU.</span>
+<span class="c1"># It will not connect and run on CPU. </span>
+<span class="c1"># Code will take some time to run, which is commonplace for real life models.</span>
+<span class="c1"># Make sure your computer does not go to sleep, and take a well-deserved break!</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>2025-10-01 17:34:47.534042: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-01 17:34:47.597321: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-10-01 17:34:48.367109: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-10-01 17:34:48.614168: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1759340089.119663     221 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1759340089.215681     221 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1759340089.950024     221 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1759340089.950061     221 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1759340089.950065     221 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1759340089.950068     221 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-10-01 17:34:49.976398: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+E0000 00:00:1759340122.163656     221 cuda_executor.cc:1228] INTERNAL: CUDA Runtime error: Failed call to cudaGetRuntimeVersion: Error loading CUDA libraries. GPU will not be used.: Error loading CUDA libraries. GPU will not be used.
+W0000 00:00:1759340122.188836     221 gpu_device.cc:2341] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Episode 1: Average Reward = 4.00, Exploration = 0.110
+Episode 11: Average Reward = -1.00, Exploration = 0.020
+Episode 21: Average Reward = 4.40, Exploration = 0.020
+Episode 31: Average Reward = 2.30, Exploration = 0.020
+Episode 41: Average Reward = 2.20, Exploration = 0.020
+Episode 51: Average Reward = -0.50, Exploration = 0.020
+Episode 61: Average Reward = -0.80, Exploration = 0.020
+Episode 71: Average Reward = 2.50, Exploration = 0.020
+Episode 81: Average Reward = 8.80, Exploration = 0.020
+Episode 91: Average Reward = 9.90, Exploration = 0.020
+Episode 101: Average Reward = 4.80, Exploration = 0.020
+Episode 111: Average Reward = 8.90, Exploration = 0.020
+Episode 121: Average Reward = 31.20, Exploration = 0.020
+Episode 131: Average Reward = 56.10, Exploration = 0.020
+Episode 141: Average Reward = 83.80, Exploration = 0.020
+Episode 151: Average Reward = 86.10, Exploration = 0.020
+Episode 161: Average Reward = 113.50, Exploration = 0.020
+Episode 171: Average Reward = 250.60, Exploration = 0.020
+Episode 181: Average Reward = 324.40, Exploration = 0.020
+Episode 191: Average Reward = 298.10, Exploration = 0.020
+Episode 201: Average Reward = 247.90, Exploration = 0.020
+Episode 211: Average Reward = 288.00, Exploration = 0.020
+Episode 221: Average Reward = 142.50, Exploration = 0.020
+Episode 231: Average Reward = 114.50, Exploration = 0.020
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save(&#39;my_model.keras&#39;)` or `keras.saving.save_model(model, &#39;my_model.keras&#39;)`. 
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Solved at episode 231: Average reward over last 100: 195.40
+Training complete! Model saved as Cartpole_model
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[&#160;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script type="module" src="https://s.brightspace.com/lib/bsi/2025.9.207/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+						if (document.querySelector('math, .d2l-element, .d2l-cplus-layout') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+							document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+								elm.setAttribute('style', 'display: block; height: 0.5rem;');
+							});
+
+							document.querySelectorAll('math mmultiscripts > none').forEach(elm => {
+								const mrow = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mrow');
+								elm.replaceWith(mrow);
+							});
+
+							window.D2L.MathJax.loadMathJax({
+								outputScale: 1.5,
+								renderLatex: false,
+								enableMML3Support: false
+							});
+						}
+					});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2025.9.207/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2025.9.207/unbundled/embeds.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					window.D2L.EmbedRenderer.renderEmbeds(document.body);
+				});</script></body></html>
